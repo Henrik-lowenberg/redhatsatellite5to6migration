@@ -76,56 +76,51 @@ attr_reader :listFile
 
   def processArray
     # Update array: truncate FQDN names to short hostnames
-#    p @hostnames.inspect
+    #p @hostnames.inspect
     @hostnames.map! {|map| map.split('.')[0]}
-#    p @hostnames.inspect
-    puts
-    puts
+    #p @hostnames.inspect
+    system "clear"
     # initialize new array instance
     @fqdn = Array.new
-    # loop though the hostnames
-    @hostnames.each do |hname|
-      # Process global host file
-#      puts "processing... #{hname}"
-      File.open("/etc/hosts") do |f|
+    # Process global host file
+    file = File.open("hosts")
+    # loop though the hosts file and list of hostnames
+    file.each_line do |line|
+      @hostnames.each do |hname|
         # Get 1st line matching hostname from array & put it in fqdn array
-        @fqdn << f.each_line.lazy.select { |line|  line.match(/#{hname}/) }.first(1)
-        f.rewind
+        @fqdn << line if line.match(/#{hname}/)
       end
-    @fqdn.each { |line| puts line }
-    exit
     end
+    #@fqdn.each { |line| puts line }
    
-#    Process @fqdn array and remove non FQDN entries
+    #Process @fqdn array and remove non FQDN entries
     if @fqdn.any? 
       puts @fqdn.inspect
       puts
       puts "- - -"
       puts
       # Regex Sub-Expressions that should extract ONLY FQDN
-      regex = /\\t\K([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]{1,61}[a-zA-Z0-9])(\.([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,61}[a-zA-Z0-9]))(\.([a-zA-Z]{3}))\g<1>*/
-#      regex = /^(?!:\/\/)([a-zA-Z0-9]+\.)?[a-zA-Z0-9][a-zA-Z0-9-]+\.[a-zA-Z]{2,6}?$\g<1>*/
-#      @fqdn.each { |el| puts el.to_s[regex] }
+      regex = '/\\t\K([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]{1,61}[a-zA-Z0-9])(\.([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,61}[a-zA-Z0-9]))(\.([a-zA-Z]{3}))\g<1>*/'
+      #regex = /^(?!:\/\/)([a-zA-Z0-9]+\.)?[a-zA-Z0-9][a-zA-Z0-9-]+\.[a-zA-Z]{2,6}?$\g<1>*/
+      #@fqdn.each { |el| puts el.to_s[regex] }
       # Update array elements: sort out FQDN names and set rest of elements to nil
       @fqdn.map! {|el| el.to_s[regex] } 
       # Save a copy of the array to use 4 outputting incorrect hostnames
       fqdn_orig = @fqdn.dup
-#      @fqdn.each { |el| puts el}
-#      p fqdn.inspect
+      #@fqdn.each { |el| puts el}
+      #p fqdn.inspect
       # trim the array to remove any nil values
       @fqdn.compact!
-#      puts @fqdn.inspect
+      #puts @fqdn.inspect
       # Compare no of short hostnames with no of FQDNs and take action if they dont match
       puts "fqdn.length: #{@fqdn.length}, @hostnames.length #{@hostnames.length}"
       if @fqdn.length != @hostnames.length
         puts "There are hosts in your list that cannot be found with their FQDN names in global hosts file!"
         fqdn_orig.each_with_index do |element,index|
-#          puts "#{index}: #{element}"
+        #puts "#{index}: #{element}"
           if element.nil?
             print "#{@hostnames[index]} is missing FQDN name\n"
           end
-        end
-      exit
       end
     else
       puts "Error, no FQDN names could be found in global hosts file!"
@@ -135,7 +130,7 @@ attr_reader :listFile
   end #End def processArray
 
 end # End of Class
-##################
+#####################################################################
 
 unless ARGV.empty?
   if ARGV.first.start_with?("-")
@@ -147,7 +142,7 @@ unless ARGV.empty?
       puts
       puts
       puts "
-### Script leyout:
+### Script layout:
 # Step 1: Get and sort file with hostnames into an array
 # Step 2: Get host's ENC variables stored in AD into an array
 # Step 3: Get host's activation keys from Satellite 5
@@ -184,7 +179,6 @@ unless ARGV.empty?
       c1.file2Array
       # # Create an instance of the method processArray
       c1.processArray
-      exit 0
     end
   end
 end
@@ -198,12 +192,3 @@ if ARGV.empty? || ARGV !~ /^-/
   puts
   exit 1
 end
-
-
-
-
-
-
-
-
-

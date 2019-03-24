@@ -38,7 +38,9 @@ class HostMatcher
   def print_results
     if @results.any?
       puts "\n======= MATCHING:\n"
-      puts @results
+      @found.each_with_index do |match, i|
+        puts @found[i] + " => " + @results[i]
+      end
 
       puts "\n======= MISSING:\n"
       puts @search - @found

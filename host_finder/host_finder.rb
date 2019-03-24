@@ -37,17 +37,20 @@ class HostMatcher
 
   def print_results
     if @results.any?
-      puts "\n======= MATCHING:\n"
+
+      puts "\n======= MATCHING =======\n"
       @found.each_with_index do |match, i|
-        puts @found[i] + " => " + @results[i]
+        puts @found[i] + ": => " + @results[i]
       end
 
-      puts "\n======= MISSING:\n"
+      puts "\n======= MISSING =======\n"
       puts @search - @found
+
     else
       puts "No FQDN names could be found in global hosts file."
       puts "Please update global hosts file on jumphost with: `ip hostname FQDN`"
     end
+    puts "\n"
   end
 end
 

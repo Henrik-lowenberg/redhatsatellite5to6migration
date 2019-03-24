@@ -60,14 +60,14 @@ unless ARGV.empty?
     case ARGV.shift
     when '-f', '--file'
       HostFinder.new(ARGV[0]).run
-
+    
     when '-h', '--help'
-
       puts "Usage: #{__FILE__} -f filename"
       puts "Filename should be a text file comprized of hosts you want to migrate from Satellite 5 to Satellite 6"
+    
     when '-v', '--version'
-
       puts "HostMatcher 1.0.0"
+      
     end
   end
 else

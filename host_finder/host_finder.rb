@@ -30,10 +30,7 @@ class HostMatcher
   def process_array
     File.open("hosts").each_line do |line|
       @search.each do |search|
-        if line.match(/#{search}/)
-          @results << line
-          @found   << search
-        end
+        (@found << search; @results << line) if line.match(/#{search}/)
       end
     end
   end

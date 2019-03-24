@@ -4,7 +4,7 @@
 # # Property of HCL Inc.
 # # Description: Migrate hosts from Satellite 5 to Satellite 6 in a series of steps
 
-class HostMatcher
+class HostFinder
   attr_reader :listFile
 
   def initialize(listFile)
@@ -14,7 +14,7 @@ class HostMatcher
     @results  = Array.new
   end
 
-  def run!
+  def run
     file_to_array
     process_array
     print_results
@@ -23,8 +23,9 @@ class HostMatcher
   private
 
   def file_to_array
-    File.open(@listFile, 'r').each { |line| @search << line }
-    @search.map! { |search| search.split('.')[0].strip }
+    File.open(@listFile, 'r').each do |line|
+      @search << line.split('.')[0].strip
+    end
   end
 
   def process_array
@@ -58,12 +59,14 @@ unless ARGV.empty?
   if ARGV.first.start_with?("-")
     case ARGV.shift
     when '-f', '--file'
-      listFile = ARGV[0]
-      HostMatcher.new(listFile).run!
+      HostFinder.new(ARGV[0]).run
+
     when '-h', '--help'
+
       puts "Usage: #{__FILE__} -f filename"
-      puts "filename should be a text file comprized of hosts you want to migrate from Satellite 5 to Satellite 6"
+      puts "Filename should be a text file comprized of hosts you want to migrate from Satellite 5 to Satellite 6"
     when '-v', '--version'
+
       puts "HostMatcher 1.0.0"
     end
   end

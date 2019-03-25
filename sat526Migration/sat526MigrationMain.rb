@@ -87,12 +87,13 @@ attr_reader :listFile
     @hostnames.each do |hname|
       # Process global host file
 #      puts "processing... #{hname}"
-      File.open("/etc/hosts") do |f|
+      File.open("hosts") do |f|
         # Get 1st line matching hostname from array & put it in fqdn array
+        puts hname
+        puts f.each_line.select { |line| line.match(/hname/)  }
         @fqdn << f.each_line.lazy.select { |line|  line.match(/#{hname}/) }.first(1)
         f.rewind
       end
-    @fqdn.each { |line| puts line }
     exit
     end
    

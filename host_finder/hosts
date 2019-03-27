@@ -49,8 +49,6 @@
 172.23.8.6 sapp92db
 172.23.0.155	sapp93db 
 131.97.193.140	r3vxppas
-10.249.130.196	ecsjh0006-n2
-10.249.130.194	ecsjh0006-n1
 #######
 ###### Zlin ########
 153.112.160.190 zlhclflm
@@ -107,20 +105,6 @@
 10.220.140.49   zlin1049
 10.220.140.50   zlin1050
 10.220.140.51   zlin1051
-10.220.140.52   zlin1052
-10.220.140.53   zlin1053
-10.220.140.54   zlin1054
-10.220.140.55   zlin1055
-10.220.140.56   zlin1056
-10.220.140.57   zlin1057
-10.220.140.58   zlin1058
-10.220.140.59   zlin1059
-10.220.140.60   zlin1060
-10.220.140.61   zlin1061
-10.220.140.62   zlin1062
-10.220.140.63   zlin1063
-10.220.140.64   zlin1064
-10.220.140.65   zlin1065
 10.220.140.52   zlin1052
 10.220.140.53   zlin1053
 10.220.140.54   zlin1054
@@ -405,6 +389,20 @@
 153.112.62.118	ZLINVPST
 153.112.162.198	ZLINVUHP
 153.112.6.55	ZLINWLJ2
+172.27.36.71	zlinwlj3
+10.248.33.124	zlinhmc1
+172.27.8.167	zlinwlj4
+#10.220.140.48	zlin0008
+10.220.140.43	zlinro01
+194.71.121.90	zlvcvsp1
+194.71.121.84	zlvcax2p
+194.71.121.88	zlvcax2t
+153.112.160.164	zc000024
+10.220.140.58	zc000026
+153.112.182.31	zlhcmint
+153.112.182.30	zlhcmint
+10.220.140.153	zlhctsoc
+##################
 131.97.121.63	segotl2245.got.volvo.net	segotl2245
 131.97.121.63   tsmgot31.got.volvo.net        tsmgot31
 153.112.88.22	usgsol0064
@@ -414,9 +412,8 @@
 10.57.68.197	prevocas197
 10.57.68.198	prevocas198
 10.57.64.6	prodas006
-10.57.64.125	segotl1112 segotl1112.wirelesscar.net
-10.57.64.126    segotl1113 segotl1113.wirelesscar.net
-153.112.47.135  segotl1305 segotl1305.wirelesscar.net
+10.57.64.125	segotl1112
+10.57.64.126    segotl1113
 10.57.68.87	segotl1131
 153.112.166.42  segotl1841
 153.112.16.217	segotl2722
@@ -430,15 +427,6 @@
 153.112.52.238  segotl1867.got.volvo.net	segotl1867
 153.112.52.239  segotl1868.got.volvo.net	segotl1868
 153.112.52.242  segotl1891.got.volvo.net	segotl1891
-153.112.47.141  segotl1516    segotl1516.srv.volvo.com
-153.112.47.142  segotl1517    segotl1517.srv.volvo.com
-153.112.47.143  segotl1518    segotl1518.srv.volvo.com
-153.112.47.144  segotl1519    segotl1519.srv.volvo.com
-.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.co.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.co.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.com.srv.volvo.commm
-
-
-
-
 10.248.4.115	segotl1151
 131.97.131.135  segotl1814
 153.112.63.215  segotl1823
@@ -507,20 +495,6 @@
 172.23.35.37	sapt08pas
 172.23.45.71	sapp91ascs
 172.23.45.72	sapp91pas
-172.23.0.69	srv33454-n2.hm.com	srv33454-n2
-172.23.0.116	srv33557-n1.hm.com	srv33557-n1
-172.23.0.117	srv33557-n2.hm.com	srv33557-n2
-172.23.2.22	sapq41db.hm.com	sapq41db
-172.23.2.23	srv33447.hm.com	srv33447
-172.23.2.24	sapq42db.hm.com	sapq42db
-172.23.35.29	sapd08ascs
-172.23.35.30	sapd08pas
-172.23.35.32	sapd08db
-172.23.35.34	sapt08db
-172.23.35.36	sapt08ascs
-172.23.35.37	sapt08pas
-172.23.45.71	sapp91ascs
-172.23.45.72	sapp91pas
 172.23.45.73	sapp91as02
 172.23.45.74	sapp91as03
 172.23.45.75	sapp91as04
@@ -546,8 +520,8 @@
 10.57.67.142    valdfas142
 10.57.67.146    valdfas146
 #10.57.67.24     valctas024
-10.248.4.105	valvcg160	valvcg160.wirelesscar.net
-10.248.4.106	valvcg161	valvcg161.wirelesscar.net
+10.248.4.105	valvcg160
+10.248.4.106	valvcg161
 10.57.69.160    prevcg160.wirelesscar.net	prevcg160
 10.57.72.22     prodmonas022.wirelesscar.net	prodmonas022
 10.57.69.163	segotl0634.wirelesscar.net	segotl0634
@@ -556,8 +530,8 @@
 10.57.65.35	segotl0992
 10.57.67.35	segotl0993
 10.57.77.70	segotl1032
-10.57.77.134	segotl1033 segotl1033.wirelesscar.net
-10.57.77.135	segotl1034 segotl1034.wirelesscar.net
+10.57.77.134	segotl1033
+10.57.77.135	segotl1034
 10.57.68.140	segotl1002
 10.57.77.196	segotl1035
 10.57.77.197	segotl1036
@@ -624,7 +598,7 @@
 10.57.65.174	proddfdb174
 10.57.65.175	proddfdb175
 10.57.65.151	oraprewlc2
-10.57.67.106	segotl1286 segotl1286.wirelesscar.net
+10.57.67.106	segotl1286
 10.248.4.43	segotl0335.wirelesscar.net	segotl0335
 10.248.4.42	segotl0336.wirelesscar.net	segotl0336
 10.248.4.54	guptpp01.wirelesscar.net	guptpp01
@@ -908,10 +882,10 @@
 172.23.34.70    sapx10ascs
 172.23.34.71    sapx10pas
 172.23.34.72    sapx10db
-10.248.4.36 segotl0322 segotl0322.wirelesscar.net
-10.248.4.37 segotl0323 segotl0323.wirelesscar.net
-10.57.65.160 segotl0918 segotl0918.wirelesscar.net
-10.57.65.161 segotl0919 segotl0919.wirelesscar.net
+10.248.4.36 segotl0322
+10.248.4.37 segotl0323
+10.57.65.160 segotl0918
+10.57.65.161 segotl0919
 10.111.2.41 geri 
 172.23.48.50	secc3397.hm.com	secc3397
 172.23.48.51	secc3398.hm.com	secc3398
@@ -1086,14 +1060,14 @@
 172.23.33.28	ghmotd01
 172.23.33.29	hmotxtst
 172.23.33.30	ghmott01
-10.57.67.160	segotl0681 segotl0681.wirelesscar.net
-10.57.67.161	segotl0682 segotl0682.wirelesscar.net
+10.57.67.160	segotl0681
+10.57.67.161	segotl0682
 10.57.69.141    segotl0674
 10.57.69.142	segotl0675
 10.57.69.146	segotl0676
 10.57.65.188	seproddug188
 10.57.65.189	seproddug189
-10.57.67.107	segotl0928 segotl0928.wirelesscar.net
+10.57.67.107	segotl0928
 10.57.67.189	sevaldug189
 10.57.67.188	sevaldug188
 10.57.67.167	seqadfol166
@@ -1199,11 +1173,11 @@
 172.23.33.195	sape50db
 172.23.33.194	sape50scs	
 172.23.33.196	sape50jc01	
-10.57.66.121	segotl1030 segotl1030.wirelesscar.net
+10.57.66.121	segotl1030
 172.23.32.86	sapt70db
 172.23.32.84	sapt70scs
 172.23.32.85	sapt70jc01
-10.57.64.121	segotl1013 segotl1013.wirelesscar.net
+10.57.64.121	segotl1013
 172.23.32.78	saps80ascs
 172.23.32.79	saps80pas
 172.23.28.95	saps80db
@@ -1211,7 +1185,7 @@
 172.23.32.82	sapd70jc01
 172.23.32.83	sapd70db
 10.57.66.104    segotl1062 segotl1062.wirelesscar.net
-10.57.66.122	segotl1031 segotl1031.wirelesscar.net
+10.57.66.122	segotl1031
 10.248.5.142	seprejl142
 172.23.33.91	secc4016.hm.com	secc4016
 172.23.33.88	secc4013.hm.com	secc4013
@@ -1233,19 +1207,19 @@
 172.23.33.208   sapa30pas
 172.23.33.209   sapa30ascs
 172.23.33.210   sapa30db
-10.57.66.125	segotl1105 segotl1105.wirelesscar.net
-10.57.66.126	segotl1106 segotl1106.wirelesscar.net
+10.57.66.125	segotl1105
+10.57.66.126	segotl1106
 10.57.66.87	segotl1120
 10.57.67.162	segotl1132
-10.57.67.176	segotl1133 segotl1133.wirelesscar.net
+10.57.67.176	segotl1133
 10.57.67.180	segotl1134
 10.57.68.211	segotl1024
 10.248.31.17   	tsmhms01.hm.com tsmhms01
 10.248.31.26   	tsmhkg01.hm.com  tsmhkg01
-10.57.64.111    segotl1122 segotl1122.wirelesscar.net
-10.57.64.113 	segotl1124 segotl1124.wirelesscar.net
-10.57.64.112    segotl1123 segotl1123.wirelesscar.net
-#10.57.64.113	segotl1124
+10.57.64.111	segotl1122.wirelesscar.net segotl1122
+10.57.64.113 	segotl1124.wirelesscar.net segotl1124
+10.57.64.112	segotl1123
+10.57.64.113	segotl1124
 10.57.67.91	segotl1198.wirelesscar.net	segotl1198
 10.57.67.92	segotl1199.wirelesscar.net	segotl1199
 10.57.65.91	segotl1200.wirelesscar.net	segotl1200
@@ -1525,14 +1499,14 @@
 10.249.130.26 	sjr3qa2pas
 10.249.130.27 	sjr3qa2as01
 #
-10.248.5.70 	segotl1476 segotl1476.wirelesscar.net 
-10.248.5.71 	segotl1477 segotl1477.wirelesscar.net 
-10.248.5.74 	segotl1478 segotl1478.wirelesscar.net 
-10.248.5.75 	segotl1479 segotl1479.wirelesscar.net
-10.248.5.6  	segotl1480 segotl1480.wirelesscar.net
-10.248.5.7  	segotl1481 segotl1481.wirelesscar.net
-10.248.5.10 	segotl1482 segotl1482.wirelesscar.net 
-10.248.5.11 	segotl1483 segotl1483.wirelesscar.net
+10.248.5.70 	segotl1476  
+10.248.5.71 	segotl1477  
+10.248.5.74 	segotl1478 
+10.248.5.75 	segotl1479 
+10.248.5.6  	segotl1480 
+10.248.5.7  	segotl1481 
+10.248.5.10 	segotl1482 
+10.248.5.11 	segotl1483
 172.23.34.101 	secc5616.hm.com secc5616
 172.23.34.102 	secc5617.hm.com secc5617
 172.23.34.103 	secc5618.hm.com secc5618
@@ -1593,11 +1567,7 @@
 10.249.130.91	sjr3pitdb
 10.249.130.93	sjr3pitscs
 10.249.130.94	sjr3pitpas
-10.57.67.34	segotl1626    segotl1626.wirelesscar.net
-153.112.47.149  segotl1647    segotl1647.srv.volvo.com
-153.112.47.150  segotl1648    segotl1647.srv.volvo.com
-153.112.47.151  segotl1649    segotl1647.srv.volvo.com
-153.112.47.152  segotl1650    segotl1647.srv.volvo.com
+10.57.67.34	segotl1626
 10.249.130.96   sjr3qa1db
 10.249.130.98   sjr3qa1ascs
 10.249.130.99   sjr3qa1pas
@@ -1672,7 +1642,7 @@
 10.249.141.37   ecsjl0125.srv.sj.se ecsjl0125
 204.156.85.135	uswsnl0083.us.wirelesscar.net	uswsnl0083
 204.156.85.136	usgsol0084.us.wirelesscar.net	usgsol0084
-204.156.85.137	uswsnl0085   uswsnl0085.us.wirelesscar.net
+204.156.85.137	uswsnl0085.us.wirelesscar.net	uswsnl0085
 204.156.85.138	usgsol0086.us.wirelesscar.net	usgsol0086
 204.156.85.139	uswsnl0087.us.wirelesscar.net	uswsnl0087
 204.156.85.140	usgsol0088.us.wirelesscar.net	usgsol0088
@@ -1785,8 +1755,8 @@
 # VGT DB servers
 10.249.49.103   usgsol0078
 10.249.49.71    usgsol0079
-10.249.49.104   uswsnl0080 uswsnl0080.us.wirelesscar.net
-10.249.49.72    uswsnl0081 uswsnl0081.us.wirelesscar.net
+10.249.49.104   uswsnl0080
+10.249.49.72    uswsnl0081
 193.235.104.70  jpageol0062
 193.235.104.71  jpageol0063
 ###VGT TSN ###
@@ -1818,7 +1788,7 @@
 172.23.34.82  	sapq20dbn4
 #
 131.97.131.112 	segotl1720 
-10.57.67.202 	segotl1671  segotl1671.wirelesscar.net
+10.57.67.202 	segotl1671
 10.249.137.55	ecsjl0137.srv.sj.se ecsjl0137
 10.249.137.56	ecsjl0163.srv.sj.se ecsjl0163
 ###INC000001613042###
@@ -1885,9 +1855,9 @@
 193.235.104.41	jpageol0084
 10.249.141.199	ecsjl0218.srv.sj.se	ecsjl0218
 10.248.5.205	segotl1837  segotl1837.wirelesscar.net
-10.248.5.206 	segotl1838  segotl1838.wirelesscar.net
-10.248.5.237	segotl1839  segotl1839.wirelesscar.net
-10.248.5.238	segotl1840  segotl1840.wirelesscar.net
+10.248.5.206 	segotl1838
+10.248.5.237	segotl1839
+10.248.5.238	segotl1840
 131.97.173.89	segotl1842
 10.248.6.75	segotl1836   segotl1836.wirelesscar.net
 10.63.208.42 ekosap2 ekosap2.dinel.local ekosap2
@@ -1983,15 +1953,15 @@
 172.23.48.92 goraprehmpb3
 153.112.5.76 segotl1894
 153.112.5.75 segotl1893 
-10.57.72.31  segotl1880  segotl1880.wirelesscar.net
-10.57.72.33  segotl1882  segotl1882.wirelesscar.net
-10.57.72.34  segotl1883  segotl1883.wirelesscar.net
-10.57.72.35  segotl1884  segotl1884.wirelesscar.net
-10.57.72.36  segotl1885  segotl1885.wirelesscar.net
-10.57.72.32  segotl1881  segotl1881.wirelesscar.net
+10.57.72.31  segotl1880
+10.57.72.33  segotl1882
+10.57.72.34  segotl1883
+10.57.72.35  segotl1884
+10.57.72.36  segotl1885
+10.57.72.32  segotl1881
 10.57.77.210 segotl1921
 10.57.77.211 segotl1922
-10.249.29.80 segotl1916  segotl1916.wirelesscar.net
+10.249.29.80 segotl1916
 153.112.49.217 gorabaspins01.srv.volvo.com gorabaspins01
 #172.23.34.120	srv35635.hm.com srv35635
 #172.23.32.74	saps40db.hm.com saps40db
@@ -2041,11 +2011,11 @@
 131.97.103.102  segotl2091.got.volvo.net        segotl2091
 131.97.193.102  segotl2092.got.volvo.net        segotl2092
 131.97.193.103  segotl2093.got.volvo.net        segotl2093
-10.248.6.28  segotl1980  segotl1980.wirelesscar.net
-10.248.6.29  segotl1981  segotl1981.wirelesscar.net
-10.248.6.30  segotl1982  segotl1982.wirelesscar.net
+10.248.6.28  segotl1980
+10.248.6.29  segotl1981
+10.248.6.30  segotl1982
 10.248.6.76  segotl1983
-10.248.6.77  segotl1984  segotl1984.wirelesscar.net
+10.248.6.77  segotl1984
 10.248.6.78  segotl1985
 10.249.141.93 ecsjl0280
 172.23.34.125	srv35640.hm.com srv35640
@@ -2074,10 +2044,10 @@
 10.249.141.212 ecsjl0288.srv.sj.se ecsjl0288
 10.249.141.210 ecsjl0290.srv.sj.se ecsjl0290
 10.249.141.213 ecsjl0291.srv.sj.se ecsjl0291
-10.248.5.152  segotl1966  segotl1966.wirelesscar.net
-10.248.5.153	segotl1967  segotl1967.wirelesscar.net
-10.248.5.156	segotl1968  segotl1968. wirelesscar.net
-10.248.5.149	segotl1965  segotl1965.wirelesscar.net
+10.248.5.152  segotl1966
+10.248.5.153	segotl1967
+10.248.5.156	segotl1968
+10.248.5.149	segotl1965
 10.248.6.58     segotl2066 
 10.248.6.59     segotl2067
 10.57.66.175  	segotl2058
@@ -2123,7 +2093,7 @@
 10.57.67.117   segotl2002  segotl2002.wirelesscar.net
 10.57.67.118   segotl2003
 204.156.84.106 usgsol0119 
-204.156.85.97  uswsnl0122	uswsnl0122.us.wirelesscar.net 
+204.156.85.97  uswsnl0122 
 10.57.66.179    segotl2133
 10.249.29.73    segotl2170
 10.249.29.74    segotl2171
@@ -2189,10 +2159,9 @@
 153.112.56.192	r3dsydb.srv.volvo.com	3rdsydb
 153.112.56.193	r3dwydb.srv.volvo.com	r3dwydb
 131.97.125.76   segotl2296.got.volvo.net   segotl2296
-10.57.64.188 segotl1663  segotl1663.wirelesscar.net
-10.57.64.189 segotl1664  segotl1664.wirelesscar.net
-10.57.64.190 segotl1665  segotl1665.wirelesscar.net
-153.112.47.146 segotl1621 segotl1621.wirelesscar.net
+10.57.64.188 segotl1663
+10.57.64.189 segotl1664
+10.57.64.190 segotl1665
 153.112.64.38 brctal0005
 153.112.64.10	 brctal0015.srv.volvo.com	 brctal0015
 131.97.125.65	gorabas18
@@ -2219,7 +2188,7 @@
 172.23.34.75 sapp20dbn1.hm.com sapp20dbn1
 
 10.248.49.22 usgsol0130
-10.248.49.23 uswsnl0131  uswsnl0131.us.wirelesscar.net
+10.248.49.23 uswsnl0131
 
 131.97.125.202 segptm2328.got.volvo.net
 
@@ -2470,16 +2439,13 @@
 172.23.44.35 gorastdhm1.hm.com gorastdhm1
 172.23.48.110 srv35729.hm.com srv35729
 172.23.48.110 gorastdhm4.hm.com gorastdhm4
-172.27.0.167 segotl1584  segotl1584.wirelesscar.net
-
-
+172.27.0.167 segotl1584
 172.23.48.55 secc3402.hm.com secc3402
 10.240.3.100 jpageol0076 jpageol0076.sait.volvo.net
 10.248.5.146 segotl1532 segotl1532.wirelesscar.net
 10.248.31.26 cnhk182
 157.171.53.164 usgsol0027
-172.27.0.168 segotl1585  segotl1585.wirelesscar.net
-
+172.27.0.168 segotl1585
 172.27.38.241 segotl2364-n1.wirelesscar.net segotl2364-n1
 172.27.38.242 segotl2364-n2.wirelesscar.net segotl2364-n2
 172.27.38.240 segotl2364-n3.wirelesscar.net segotl2364-n3
@@ -2505,20 +2471,20 @@
 172.23.28.12	sapa90as01
 172.23.28.14	sapc91cs
 172.23.28.15	sapc91as01
-#172.27.1.138   segotl2538	segotl2538.wirelesscar.net
+172.27.1.138   segotl2538
 172.27.8.233	segotl2472
-#172.27.1.136   segotl2537 	segotl2537.wirelesscar.net
-172.27.1.140   segotl2539	segotl2539.wirelesscar.net
+172.27.1.136   segotl2537
+172.27.1.140   segotl2539
 172.27.36.136	segotl2474
-#172.27.1.137	segotl2542	segotl2542.wirelesscar.net
-172.27.1.139	segotl2543	segotl2543.wirelesscar.net
-172.27.1.141	segotl2544	segotl2544.wirelesscar.net
-172.27.1.143	segotl2545	segotl2545.wirelesscar.net
-79.170.22.75	segotl2546	segotl2546.wirelesscar.net
-172.27.1.144	segotl2547	segotl2547.wirelesscar.net
-#172.27.1.135    segotl2541	segotl2541.wirelesscar.net
-172.27.1.142    segotl2540	segotl2540.wirelesscar.net
-172.27.0.215	segotl2562	segotl2562.wirelesscar.net
+172.27.1.137	segotl2542
+172.27.1.139	segotl2543
+172.27.1.141	segotl2544
+172.27.1.143	segotl2545
+79.170.22.75	segotl2546
+172.27.1.144	segotl2547
+172.27.1.135    segotl2541
+172.27.1.142    segotl2540
+172.27.0.215	segotl2562
 172.27.1.142    segotl2540
 172.23.35.57 srv33366.hm.com srv33366
 172.23.35.55 srv33367.hm.com srv33367
@@ -2531,20 +2497,20 @@
 172.23.0.45 sapp10as13.hm.com sapp10as13
 172.23.35.65 srv33376.hm.com srv33376
 172.23.0.46 sapp10as14.hm.com sapp10as14
-79.170.22.87    segotl2550	segotl2550.wirelesscar.net
-79.170.22.89	segotl2551	segotl2551.wirelesscar.net
-#172.27.2.103	segotl2552	segotl2552.wirelesscar.net
-172.27.2.105	segotl2553	segotl2553.wirelesscar.net
-172.27.2.109	segotl2554	segotl2554.wirelesscar.net
-172.27.36.7	segotl2485	
+79.170.22.87    segotl2550
+79.170.22.89	segotl2551
+172.27.2.103	segotl2552
+172.27.2.105	segotl2553
+172.27.2.109	segotl2554
+172.27.36.7	segotl2485
 172.27.36.8	segotl2486
 172.27.6.231	segotl2487
 172.27.6.232	segotl2488
 79.170.22.88	segotl2555
-79.170.22.90	segotl2556	segotl2556.wirelesscar.net
-#172.27.2.104	segotl2557	segotl2557.wirelesscar.net
-172.27.2.106	segotl2558	segotl2558.wirelesscar.net
-172.27.2.110	segotl2559	
+79.170.22.90	segotl2556
+172.27.2.104	segotl2557
+172.27.2.106	segotl2558
+172.27.2.110	segotl2559
 172.27.36.39	segotl2493
 153.112.56.170 segotl0668_ha.srv.volvo.com
 153.112.56.249 segotl2299.got.volvo.net
@@ -2553,7 +2519,7 @@
 172.27.8.135	segotl2495
 172.27.8.136 	segotl2496
 172.27.36.40	segotl2494
-172.27.35.205	segotl2560	segotl2560.wirelesscar.net
+172.27.35.205	segotl2560
 172.27.6.199    segotl2491
 172.27.6.200    segotl2492
 153.112.56.220	r3dwuap5
@@ -2562,16 +2528,14 @@
 153.112.56.13	r3dwuascs
 10.111.24.11 segbgslx024
 10.57.65.116    segotl2151
-172.27.0.170	segotl1587  segotl1587.wirelesscar.net
-172.27.0.169	segotl1586  segotl1586.wirelesscar.net
-153.112.47.148  segotl1622  segotl1622.srv.volvo.com
-
+172.27.0.170	segotl1587
+172.27.0.169	segotl1586
 172.23.35.141	srv33378.hm.com srv33378
 172.23.35.142	sapp70jc03
-10.57.64.114	segotl1121 segotl1121.wirelesscar.net
+10.57.64.114	segotl1121
 157.171.162.25  tsmkal01    rukalul0002
-10.57.64.186	segotl1666 segotl1666.wirelesscar.net
-10.57.64.187	segotl1667 segotl1667.wirelesscar.net
+10.57.64.186	segotl1666
+10.57.64.187	segotl1667
 10.248.6.153	segotl2523
 10.248.6.154 	segotl2524
 10.248.6.73 	segotl2525
@@ -2584,19 +2548,18 @@
 10.57.69.156	segotl1578
 10.57.69.155	segotl1577
 10.248.14.66	cntsnl0012
-10.57.69.151	segotl0999 segotl0999.wirelesscar.net
+10.57.69.151	segotl0999
 153.112.89.73	usgsol0043
 153.112.89.74	usgsol0044
-10.248.5.136	segotl1559 segotl1559.wirelesscar.net
-10.249.29.75	segotl1560 segotl1560.wirelesscar.net
-10.249.29.76	segotl1561 segotl1561.wirelesscar.net
-10.248.5.143	segotl1562   segotl1562.wirelesscar.net
-10.248.5.144	segotl1563   segotl1563.wirelesscar.net
-10.248.5.135	segotl1566   segotl1566.wirelesscar.net
-10.249.29.72    segotl1565   segotl1565.wirelesscar.net
-10.57.67.203	segotl1672   segotl1672.wirelesscar.net
-10.57.67.204	segotl1673   segotl1673.wirelesscar.net
-10.57.67.200	segotl1674   segotl1674.wirelesscar.net
+10.248.5.136	segotl1559
+10.249.29.75	segotl1560
+10.249.29.76	segotl1561
+10.248.5.143	segotl1562
+10.248.5.144	segotl1563
+10.248.5.135	segotl1566
+10.57.67.203	segotl1672
+10.57.67.204	segotl1673
+10.57.67.200	segotl1674
 10.57.67.201	segotl1675   segotl1675.wirelesscar.net
 10.57.67.207	segotl1676   segotl1676.wirelesscar.net
 10.57.67.208	segotl1677   segotl1677.wirelesscar.net
@@ -2683,8 +2646,8 @@
 #10.248.48.29	uswsnl0165
 172.27.35.206	segotl2644
 172.27.35.24	segotl2661
-193.235.104.84	jpageol0099 jpageol0099.wirelesscar.net
-193.235.104.85	jpageol0100 jpageol0100.wirelesscar.net
+193.235.104.84	jpageol0099
+193.235.104.85	jpageol0100
 172.27.35.23	segotl2660
 172.27.9.87	segotl2662
 172.27.9.88	segotl2663
@@ -2693,8 +2656,8 @@
 204.156.85.155	usgsol0151
 204.156.85.157	usgsol0153
 204.156.85.91	usgsol0155
-193.235.104.99	jpageol0101 jpageol0101.wirelesscar.net
-193.235.104.100	jpageol0102 jpageol0102.wirelesscar.net
+193.235.104.99	jpageol0101
+193.235.104.100	jpageol0102
 193.235.103.196 cntsnl0043
 193.235.103.197 cntsnl0044
 193.235.103.212 cntsnl0045
@@ -2704,13 +2667,13 @@
 10.249.139.67 gorastdsjrps01
 10.249.139.68 gorastdsjtts01
 10.249.139.69 gorastdsjrapid01
-204.156.85.156	uswsnl0152	uswsnl0152.us.wirelesscar.net
-204.156.85.158	uswsnl0154      uswsnl0154.us.wirelesscar.net
-204.156.85.92	uswsnl0156      uswsnl0156.us.wirelesscar.net
-204.156.84.91	usgsol0157      usgsol0157.us.wirelesscar.net
-204.156.84.92	uswsnl0158	uswsnl0158.us.wirelesscar.net
-204.156.84.93	usgsol0159      usgsol0159.us.wirelesscar.net
-204.156.84.94	uswsnl0160      uswsnl0160.us.wirelesscar.net
+204.156.85.156	uswsnl0152
+204.156.85.158	uswsnl0154
+204.156.85.92	uswsnl0156
+204.156.84.91	usgsol0157
+204.156.84.92	uswsnl0158
+204.156.84.93	usgsol0159
+204.156.84.94	uswsnl0160
 10.249.141.81	ecsjl0329
 193.235.103.198	cntsnl0081
 193.235.103.199	cntsnl0082
@@ -2795,8 +2758,8 @@
 79.170.22.248	segotl2745
 172.27.34.71	segotl2746
 79.170.21.7     segotl2762
-10.57.71.5	rukalul0003 rukalul0003.wirelesscar.net
-10.57.70.5	rukalul0004 rukalul0004.wirelesscar.net
+10.57.71.5	rukalul0003
+10.57.70.5	rukalul0004
 10.57.71.4	rukalul0005
 10.57.70.4	rukalul0006
 172.27.0.217	segotl2757
@@ -2821,7 +2784,7 @@
 172.23.44.22 	srv35702.hm.com
 172.23.44.24 	srv35703.hm.com
 172.23.44.26 	srv35704.hm.com
-204.156.85.165	usgsol0186 usgsol0186.us.wirelesscar.net
+204.156.85.165	usgsol0186
 10.249.140.27	ecsjl0333.srv.sj.se ecsjl0333
 10.57.68.130    segotl2801
 172.23.28.43	srv33452.hm.com srv33452
@@ -2847,16 +2810,16 @@
 204.156.85.164 usgsol0129	
 10.249.49.39 usgsol0094	
 10.249.49.24 usgsol0096	
-204.156.84.72 usprodvoc072 usprodvoc072.wirelesscar.net
+204.156.84.72 usprodvoc072
 204.156.84.73 usprodvoc073
 204.156.84.74 usprodvoc074
 204.156.85.71 usvalchr025	
 204.156.85.72 usvalchr026	
 10.249.49.23 uswsnl0095	
 10.249.49.25 uswsnl0097 uswsnl0097.us.wirelesscar.net	
-204.156.85.99 	uswsnl0124   uswsnl0124.us.wirelesscar.net	
-204.156.85.161 uswsnl0126    uswsnl0126.us.wirelesscar.net	
-204.156.85.163 uswsnl0127    uswsnl0127.us.wirelesscar.net
+204.156.85.99 uswsnl0124	
+204.156.85.161 uswsnl0126	
+204.156.85.163 uswsnl0127
 10.111.24.12 segotl2809
 131.97.124.67 segotl2806
 131.97.124.125 segotl2807
@@ -2945,7 +2908,7 @@
 172.23.0.45	srv33435.hm.com srv33435
 172.23.0.46	srv33436.hm.com srv33436
 10.224.5.57   	plwrol0003
-10.249.29.71	segotl1564 segotl1564.wirelesscar.net
+10.249.29.71	segotl1564
 172.23.2.51	srv33410.hm.com srv33410
 172.23.2.52     srv33411.hm.com srv33411
 172.23.2.53     srv33412.hm.com srv33412
@@ -2973,9 +2936,9 @@
 10.215.181.135  buywl0005.lyon.volvo.net buywl0005
 157.171.85.48	uswsnl0020
 
-172.27.66.103 uswsnl0243 uswsnl0243.us.wirelesscar.net 
+172.27.66.103 uswsnl0243  
 #204.156.65.77 uswsnl0242 
-172.27.66.215  uswsnl0246 uswsnl0246.us.wirelesscar.net 
+172.27.66.215  uswsnl0246 
 172.27.33.151	segotl2863
 172.27.33.152	segotl2864
 153.112.217.9	usgsol0206
@@ -3375,8 +3338,8 @@
 172.27.66.201 usgsol0149
 172.23.28.75  srv33567		srv33567.hm.com
 172.23.28.74  srv33566.hm.com   srv33566
-204.156.85.143	usgsol0230 usgsol0230.us.wirelesscar.net
-204.156.85.145	uswsnl0231	uswsnl0231.us.wirelesscar.net
+204.156.85.143	usgsol0230
+204.156.85.145	uswsnl0231
 10.57.67.116	segotl2152
 10.247.1.43     srv57131
 10.247.1.47     srv57135
@@ -3552,8 +3515,8 @@
 172.23.27.59 sapq40as04
 131.97.124.197 segotl3103
 10.233.132.171	krchal2003
-#172.27.12.72 segotl3100
-#172.27.12.71 segotl3099
+172.27.12.72 segotl3100
+172.27.12.71 segotl3099
 172.27.66.151  usgsol0238
 172.27.66.107	uswsnl0241 
 153.112.122.134 cntsnl0094 
@@ -3565,6 +3528,7 @@
 172.23.32.30  srv33582.hm.com srv33582
 172.23.32.31 srv33583.hm.com srv33583 
 
+172.27.66.103 uswsnl0243 
 204.156.65.77 uswsnl0242
 172.27.66.215 uswsnl0246
 172.27.66.202 uswsnl0245
@@ -3583,7 +3547,7 @@
 172.23.32.61  sapp71jc01
 153.112.53.70   rhel7build-2
 10.248.5.145    segotl1531 segotl1531.wirelesscar.net
-204.156.65.87   uswsnl0244 uswsnl0244.us.wirelesscar.net
+204.156.65.87   uswsnl0244
 10.247.1.44	srv57132
 10.247.1.48	srv57136
 157.171.162.80	rukalul0007
@@ -3592,7 +3556,7 @@
 155.137.243.60	srv50170
 10.247.1.45	srv57133
 10.247.1.46	srv57134
-204.156.65.39	uswsnl0248 uswsnl0248.us.wirelesscar.net
+204.156.65.39	uswsnl0248
 131.97.124.200	segotl3117
 10.57.72.60	segotl3104
 172.23.32.200   sapq71scs sapq71scs.hm.com
@@ -3683,8 +3647,8 @@
 172.18.254.52	usgsol0253
 
 172.23.34.17	sapa80ascs
-172.27.81.72  	uswsnl0252 uswsnl0252.us.wirelesscar.net 
-172.27.81.55  	uswsnl0250 uswsnl0250.us.wirelesscar.net
+172.27.81.72  	uswsnl0252 
+172.27.81.55  	uswsnl0250
 10.247.2.21  srv01240 srv01240.leo-internal.net
 10.247.2.22  srv01241 srv01241.leo-internal.net
 10.240.3.89  jpageol0106 
@@ -3694,15 +3658,15 @@
 172.27.35.207  	segotl3172
 172.27.35.208  	segotl3173
 79.170.22.137  segotl3174
-172.27.81.71  uswsnl0254 uswsnl0254.us.wirelesscar.net
+172.27.81.71  uswsnl0254
 172.27.81.78  usgsol0255
-172.27.81.79  uswsnl0256 uswsnl0256.us.wirelesscar.net
+172.27.81.79  uswsnl0256
 79.170.22.76  segotl3178		
 204.156.65.40	usgsol0262
 172.23.28.82	srv33586.hm.com srv33586
-172.27.66.168  	uswsnl0257 uswsnl0257.us.wirelesscar.net 
+172.27.66.168  	uswsnl0257 
 172.27.66.169  	usgsol0258 
-172.27.66.184  	uswsnl0259 uswsnl0259.us.wirelesscar.net 
+172.27.66.184  	uswsnl0259 
 172.27.66.185  	usgsol0260 
 10.247.2.85	srv01264 srv01264.leo-internal.net
 155.137.69.234 DKLX002
@@ -3724,7 +3688,7 @@
 10.249.130.18   sjr3piqscs      sjr3piqscs.srv.sj.se
 155.137.69.221 dkrduxval20      dkrduxval20.global.leo-group.net
 155.137.69.222 dkrduxtest20     dkrduxtest20.global.leo-group.net
-204.156.65.55   uswsnl0263 uswsnl0263.us.wirelesscar.net
+204.156.65.55   uswsnl0263
 10.248.5.242    segotl3170
 153.112.167.78  segotl3171
 155.137.69.209 DKCM001
@@ -3741,17 +3705,16 @@
 #204.156.65.78   usgsol0279
 131.97.124.249	segotl3203
 131.97.124.248 	segotl3204
-172.27.81.119   uswsnl0272	uswsnl0272.us.wirelesscar.net
-#172.27.81.120   usgsol0273
-204.156.64.231 usgsol0273
+172.27.81.119   uswsnl0272
+172.27.81.120   usgsol0273
 204.156.64.169  uswsnl0276
 204.156.64.170  usgsol0277
 204.156.64.168  usgsol0275
 204.156.64.167  uswsnl0274
 #204.156.65.71 uswsnl0280   
-204.156.64.135 uswsnl0268	uswsnl0268.us.wirelesscar.net
+204.156.64.135 uswsnl0268
 204.156.64.136 usgsol0269
-204.156.64.137 uswsnl0270       uswsnl0270.us.wirelesscar.net
+204.156.64.137 uswsnl0270
 204.156.64.138 usgsol0271
 153.112.57.232 segotl3168
 131.97.193.221 r3vguascs
@@ -3774,14 +3737,14 @@
 153.112.57.233	segotl3169
 172.23.28.68   sape10cs.hm.com
 172.23.28.69   sape10as01.hm.com
-204.156.65.24  uswsnl0282	uswsnl0282.us.wirelesscar.net
-204.156.65.26  uswsnl0284	uswsnl0284.us.wirelesscar.net
+204.156.65.24  uswsnl0282
+204.156.65.26  uswsnl0284
 
 155.137.68.240  DKRDUXPROD25
 155.137.68.103  DKRDUXPROD20
 155.137.69.100  DKRDUXPROD24
 172.27.66.104   usgsol0287
-172.27.66.109   uswsnl0286	uswsnl0286.us.wirelesscar.net
+172.27.66.109   uswsnl0286
 172.27.9.57   segotl3218
 172.27.66.108   usgsol0267
 172.27.9.58    segotl3219 
@@ -3804,9 +3767,9 @@
 10.196.48.43   techh0002   techh0002.eu.techem.corp
 
 155.137.243.52 srv50161
-193.235.104.73 jpageol0114 jpageol0114.wirelesscar.net 
-193.235.104.74 jpageol0115 jpageol0115.wirelesscar.net
-193.235.104.75 jpageol0116 jpageol0116.wirelesscar.net
+193.235.104.73 jpageol0114 
+193.235.104.74 jpageol0115
+193.235.104.75 jpageol0116
 
 153.112.225.42  jpageol0112
 153.112.225.43  jpageol0113
@@ -3873,18 +3836,18 @@
 172.23.8.32  srv33510-n1.hm.com srv33510-n1
 10.249.141.112 ecsjl0341
 
-193.235.104.8 jpageol0120 jpageol0120.wirelesscar.net
-193.235.104.14 jpageol0124 jpageol0124.wirelesscar.net
-193.235.104.13  jpageol0123 jpageol0123.wirelesscar.net
-193.235.104.44 jpageol0117 jpageol0117.wirelesscar.net
-193.235.104.45 jpageol0118 jpageol0118.wirelesscar.net
-193.235.104.46 jpageol0119 jpageol0119.wirelesscar.net
-193.235.104.9  jpageol0121 jpageol0121.wirelesscar.net
+193.235.104.8 jpageol0120
+193.235.104.14 jpageol0124
+193.235.104.13  jpageol0123
+193.235.104.44 jpageol0117
+193.235.104.45 jpageol0118
+193.235.104.46 jpageol0119
+193.235.104.9  jpageol0121
 10.235.62.18  blr-hpc3-f001
 10.235.62.16 blr-hpc3-f002
 10.235.62.14 blr-hpc3-f003
 10.235.62.12 blr-hpc3-f004
-193.235.104.12	jpageol0122 jpageol0122.wirelesscar.net
+193.235.104.12	jpageol0122
 153.112.17.150  segotl3242-n2  
 153.112.17.149  segotl3242-n1  
 172.23.28.109  	sapt30cs 	sapt30cs.hm.com
@@ -4320,7 +4283,7 @@
 172.27.6.141	segotl3484
 172.27.6.142	segotl3485
 172.27.81.231	usgsol0294
-172.27.81.232	uswsnl0295	 uswsnl0295.us.wirelesscar.net
+172.27.81.232	uswsnl0295
 172.27.81.233	usgsol0296
 172.27.36.173 segotl3487 
 172.27.36.174  segotl3488
@@ -4360,7 +4323,7 @@
 172.27.81.122	uswsnl0297
 10.248.48.45	usgsol0298  usgsol0298.us.wirelesscar.net
 172.27.67.71	usgsol0299
-172.27.67.72	uswsnl0300	 uswsnl0300.us.wirelesscar.net
+172.27.67.72	uswsnl0300
 172.27.67.73	usgsol0301
 153.112.57.240  segotl3471-n1
 153.112.57.241  segotl3471-n2
@@ -4374,7 +4337,7 @@
 10.249.133.214 ecsjl0344 
 10.249.133.215 ecsjl0345 
 204.156.64.141  usgsol0289 
-204.156.64.142  uswsnl0290	uswsnl0290.us.wirelesscar.net
+204.156.64.142  uswsnl0290 
 10.249.64.54	segotl3181-n1
 10.249.64.55  	segotl3181-n2
 10.196.66.90	techl0300	techl0300.eu.techem.corp
@@ -4746,7 +4709,7 @@
 172.23.1.11 sapp07as01 sapp07as01.hm.com
 
 
-204.156.65.9   uswsnl0280	uswsnl0280.us.wirelesscar.net
+204.156.65.9   uswsnl0280
 204.156.65.8   usgsol0279
 204.156.65.7   uswsnl0242
 153.112.53.182 segotl3513
@@ -4885,7 +4848,7 @@
 10.247.2.110 srv01312 srv01312.leo-internal.net
 153.112.166.55  r3fepas11 r3fepas11.srv.volvo.com
 153.112.56.132  r3depap2.srv.volvo.com r3depap2
-10.248.48.35	usgsol0315 usgsol0315.us.wirelesscar.net
+10.248.48.35	usgsol0315
 153.112.107.136	frlyonl0224
 153.112.104.194	frlyonl0213-n1	frlyonl0213-n1.lyon.volvo.net
 153.112.104.204	forapre2	forapre2.srv.volvo.com
@@ -4894,7 +4857,7 @@
 172.27.12.136  segotl3582 
 153.112.17.165  segotl3597-n1  segotl3597-n1.srv.volvo.com
 153.112.17.166  segotl3597-n2  segotl3597-n2.srv.volvo.com
-10.248.48.36	uswsnl0316	uswsnl0316.us.wirelesscar.net
+10.248.48.36	uswsnl0316
 172.27.9.220    segotl3608
 153.112.64.206	brctal0017	brctal0017.srv.volvo.com
 153.112.64.207	brctal0018	brctal0018.srv.volvo.com
@@ -5370,7 +5333,7 @@
 131.97.103.116 segotl3818 segotl3818.got.volvo.net
 10.248.5.26 segotl3764 segotl3764.wirelesscar.net
 10.248.5.27 segotl3765 segotl3765.wirelesscar.net 
-10.248.198.71  jpageol0126 jpageol0126.wirelesscar.net
+10.248.198.71  jpageol0126
 193.235.104.88  jpageol0130
 193.235.104.89  jpageol0131
 193.235.104.101 jpageol0132
@@ -5570,6 +5533,28 @@
 172.23.104.53  sapah0cs		sapah0cs.hm.com
 172.23.104.50  srv33945 	srv33945.hm.com
 172.23.104.51  sapah0as01 	sapah0as01.hm.com
+172.23.1.106  srv33949 	srv33949.hm.com
+172.23.1.107  sapph0db 	sapph0db.hm.com
+172.23.1.108  srv33950 	srv33950.hm.com
+172.23.1.109	sapph0cs 	sapph0cs.hm.com
+172.23.1.110  	srv33951 	srv33951.hm.com		
+172.23.1.111  sapph0as01	sapph0as01.hm.com
+172.23.104.107  srv33946 	srv33946.hm.com
+172.23.104.108  sapch0db 	sapch0db.hm.com
+172.23.104.109  srv33947	srv33947.hm.com
+172.23.104.110  sapch0cs 	sapch0cs.hm.com
+172.23.104.111  srv33948 	srv33948.hm.com
+172.23.104.112  sapch0as01 	sapch0as01.hm.com
+10.249.130.194  ecsjh0006-n1 ecsjh0006-n1.srv.sj.se
+10.249.130.196  ecsjh0006-n2 ecsjh0006-n2.srv.sj.se
+10.222.169.6    VBZ-app-avm-0
+10.222.169.13   VBZ-app-avm-1
+10.222.169.19   VBZ-xscs-vm-0
+172.23.104.77	sapt65db-tmp	
+172.23.104.79	sapt65scs-tmp
+172.23.104.80	sapt65jc01-tmp
+10.57.76.11    segotl3877       segotl3877.wirelesscar.net
+10.57.76.138 segotl3902  segotl3902.wirelesscar.net
 10.57.76.139 segotl3903 segotl3903.wirelesscar.net
 10.57.76.196  segotl3904 segotl3904.Wirelesscars.net
 10.57.76.12   segotl3878        segotl3878.wirelesscar.net
@@ -5585,18 +5570,4 @@
 10.249.142.62	ecsjl0371	ecsjl0371.srv.sj.se
 10.249.139.48	ecsjl0370	
 10.235.62.27 inblrl0022
-172.27.3.72   segotl2538       segotl2538.wirelesscar.net
-172.27.3.74   segotl2537       segotl2537.wirelesscar.net
-172.27.3.71    segotl2542      segotl2542.wirelesscar.net
-172.27.3.73    segotl2541      segotl2541.wirelesscar.net
-172.27.3.75    segotl2552      segotl2552.wirelesscar.net
-172.27.3.76    segotl2557      segotl2557.wirelesscar.net
-172.27.3.78 segotl3100
-172.27.3.77 segotl3099
-172.23.1.112   srv33952     srv33952.hm.com
-172.23.1.113   sapp10as22   sapp10as22.hm.com
-172.23.1.114   srv33953     srv33953.hm.com
-172.23.1.115   sapp10as23   sapp10as23.hm.com
-10.57.76.11    segotl3877   segotl3877.wirelesscar.net
-131.97.131.21	segotl3953	segotl3953.got.volvo.net
-131.97.131.28 segotl3952
+

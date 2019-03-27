@@ -103,11 +103,20 @@ class GetHostList
 #    Testing which regular expression matches FQDN
 #    regex = /\(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]{1,61}[a-zA-Z0-9])(\.([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,61}[a-zA-Z0-9]))(\.([a-zA-Z]{3}))\g<1>*/
     #regex = /([a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/ix)\g<1>*/
+#    regex = /([a-zA-Z]|[a-zA-Z0-9][a-zA-Z0-9\-]{1,61}[a-zA-Z0-9])(\.([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,61}[a-zA-Z0-9]))(\.([a-zA-Z]{3}))/ 
+#    regex = /([a-zA-Z][a-zA-Z0-9][a-zA-Z0-9\-]{1,62})\.([a-zA-Z]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,62})\.[a-zA-Z]{3,}/
+    regex = /([a-zA-Z][a-zA-Z0-9\-]{1,61})(\.([a-zA-Z]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,61}))+(\.([a-zA-Z]{2,}))/
     # print matches
     craparray = Array.new
-    @hosts_results.each { |line| (craparray << line ) if line.match(/([a-zA-Z0-9]+[\.]{1}[a-zA-Z0-9]+)*\.[a-zA-Z]{2,5}(:[0-9]{1,5})?(\/.*)?$/) }
+    @hosts_results.each { |line| (craparray << line[regex] ) if line.match(/#{regex}/) }
+    puts "-------------------------------------"
+    #@hosts_results.each { |line| puts line[regex] }
+    puts
+    craparray.each {|element| puts element}
     puts puts puts
-    craparray.each { |fqdnline| puts fqdnline }
+    puts "-------------------------------------"
+
+#    craparray.each { |fqdnline| puts fqdnline }
     exit
     # update the array to only match the regular expression
     #@hosts_results.map! {|el| el.to_s[regex] }

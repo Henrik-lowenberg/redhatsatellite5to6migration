@@ -143,6 +143,8 @@ class GetHostList
   end #End def print_results
  
   def initiate_steps
+    # Assign global array the value of the instance variable
+    $hosts_fqdn = @hosts_fqdn
     require_relative './sat526MigrationGetHost_Enc.rb'
     #require_relative './sat526MigrationGetHost_ActivationKeys.rb'
     #require_relative './sat526MigrationGetHost_Channels.rb'

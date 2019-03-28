@@ -8,4 +8,4 @@
 # # This file: sat526MigrationGetHost_Enc.rb
 
 puts " #{__FILE__} running..."
-puts "Halleluja Lord! I can see the light!" if @hosts_fqdn.any?
+puts "Halleluja Lord! I can see the light!" if $hosts_fqdn.any?

@@ -62,18 +62,18 @@ class GetHostList
   attr_reader :listFile
 
   def initialize(listFile)
-    @listFile = listFile
+    @listFile       = listFile
     @hosts_search   = Array.new
     @hosts_found    = Array.new
     @hosts_results  = Array.new
-    @hosts_fqdn = Array.new
+    @hosts_fqdn     = Array.new
   end
 
  def run
     file_to_array
     process_array
-    #print_results
-    #initiate_steps
+    print_results
+    initiate_steps
   end
 
   private
@@ -91,12 +91,12 @@ class GetHostList
   end
 
   def process_array
-    File.open("/etc/hosts").each_line do |line|
+    File.open("etc/hosts").each_line do |line|
       @hosts_search.each do |search|
         (@hosts_found << @hosts_search; @hosts_results << line) if line.match(/#{search}/)
       end
     end
-    puts "@hosts_results b4 regex " ; p @hosts_results.inspect
+    #puts "@hosts_results b4 regex " ; p @hosts_results.inspect
 #    puts "@hosts_found " ; p @hosts_found.inspect
     #puts 
     @hosts_results_dup = @hosts_results
@@ -107,33 +107,23 @@ class GetHostList
 #    regex = /([a-zA-Z][a-zA-Z0-9][a-zA-Z0-9\-]{1,62})\.([a-zA-Z]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,62})\.[a-zA-Z]{3,}/
     regex = /([a-zA-Z][a-zA-Z0-9\-]{1,61})(\.([a-zA-Z]|[a-zA-Z0-9][a-zA-Z0-9\-]{0,61}))+(\.([a-zA-Z]{2,}))/
     # print matches
-    craparray = Array.new
-    @hosts_results.each { |line| (craparray << line[regex] ) if line.match(/#{regex}/) }
-    puts "-------------------------------------"
-    #@hosts_results.each { |line| puts line[regex] }
-    puts
-    craparray.each {|element| puts element}
-    puts puts puts
-    puts "-------------------------------------"
-
-#    craparray.each { |fqdnline| puts fqdnline }
-    exit
-    # update the array to only match the regular expression
-    #@hosts_results.map! {|el| el.to_s[regex] }
-    #@hosts_results.compact!
-    puts "@hosts_results after regex " ; p @hosts_results.inspect
+    @hosts_fqdn = Array.new
+    @hosts_results.each { |line| (@hosts_fqdn << line[regex] ) if line.match(/#{regex}/) }
   end #End def processArray
 
   def print_results
-    #system "clear"
-    puts "hosts_search contains " + @hosts_search.length.to_s + " elements"
-    puts "hosts_results contains " + @hosts_results.length.to_s + " elements"
-    puts "@hosts_found contains " + @hosts_found.length.to_s + " elements"
- 
-    puts "@hosts_search  " ; p @hosts_search.inspect
-    puts "@hosts_results " ; p @hosts_results.inspect
-    puts "@hosts_found " ; p @hosts_found.inspect
-exit
+    system "clear"
+    #puts "hosts_search contains " + @hosts_search.length.to_s + " elements"
+    #puts "hosts_results contains " + @hosts_results.length.to_s + " elements"
+    #puts "@hosts_found contains " + @hosts_found.length.to_s + " elements"
+    #puts "@hosts_search  " ; p @hosts_search.inspect
+    #puts "@hosts_results " ; p @hosts_results.inspect
+    #puts "@hosts_found " ; p @hosts_found.inspect
+    puts "-------------------------------------"
+    puts
+    @hosts_fqdn.each {|element| puts element}
+    puts
+    puts "-------------------------------------"
     if @hosts_results.any?
       if @hosts_search.length != @hosts_results.length
         puts "There are hosts in your list that cannot be found with their FQDN names in global hosts file!"
@@ -153,14 +143,14 @@ exit
   end #End def print_results
  
   def initiate_steps
-    #require("./sat526MigrationGetHost_Enc.rb")
-    #require("./sat526MigrationGetHost_ActivationKeys.rb")
-    #require("./sat526MigrationGetHost_Channels.rb")
-    #require("./sat526MigrationGetHost_nics.rb")
-    #require("./sat526MigrationGenerateHostFile.rb")
-    #require("./sat526MigrationCreateContenthostEntry.rb")
-    #require("./sat526MigrationCreateSatellite5SystemGroup.rb")
-    #require("./sat526MigrationRunremotejobAgainstSatellite5SystemGroup.rb")
+    require_relative './sat526MigrationGetHost_Enc.rb'
+    #require_relative './sat526MigrationGetHost_ActivationKeys.rb'
+    #require_relative './sat526MigrationGetHost_Channels.rb'
+    #require_relative './sat526MigrationGetHost_nics.rb'
+    #require_relative './sat526MigrationGenerateHostFile.rb'
+    #require_relative './sat526MigrationCreateContenthostEntry.rb'
+    #require_relative './sat526MigrationCreateSatellite5SystemGroup.rb'
+    #require_relative './sat526MigrationRunremotejobAgainstSatellite5SystemGroup.rb'
   end
 
 end # End of Class
@@ -201,7 +191,7 @@ unless ARGV.empty?
 
 "
     when '-v', '--version'
-      puts "Satellite Host Migration Tool version: 1.0"
+      puts "Satellite Host Migration Tool version: 1.0 Beta"
     when '-f', '--file'
       GetHostList.new(ARGV[0]).run
     end

@@ -193,7 +193,7 @@ unless ARGV.empty?
 
 "
     when '-v', '--version'
-      puts "Satellite Host Migration Tool version: 1.0 Beta"
+      puts "Satellite Host Migration Tool version: 1.0b"
     when '-f', '--file'
       GetHostList.new(ARGV[0]).run
     end

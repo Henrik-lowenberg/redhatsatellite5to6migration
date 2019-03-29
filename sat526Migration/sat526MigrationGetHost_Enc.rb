@@ -21,21 +21,13 @@ Format of binary file data:
     uuma: got
 
 =end
+require 'yaml'
 
 puts " #{__FILE__} running..."
 puts "Halleluja Lord! I can see the light!" if $hosts_fqdn.any?
 puts
 
-=begin
-File.open('/data01/puppet/enc/combined.dump', "r") do |f|
-  @dumpfile = Marshal.load(f)
-end
-=end
-
 encdump = []
-File.open('/data01/puppet/enc/combined.yaml', "r") do |file|
-  file.each_line do |line|
-    encdump << line
-  end
-end
-p encdump.inspect
+#dumpfile =YAML.load_file('/data01/puppet/enc/combined.yaml'
+dumpfile =YAML.load_file('combined.yaml')
+p dumpfile.inspect

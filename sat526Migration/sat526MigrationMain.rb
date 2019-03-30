@@ -137,10 +137,10 @@ class GetHostList
     # Declare & assign values to global variables
     $hosts_fqdn = @hosts_fqdn
     $hosts = @hosts_search
-    require_relative './sat526MigrationGetHost_Enc.rb'
-    #require_relative './sat526MigrationGetHost_ActivationKeys.rb'
+    require_relative './sat526MigrationGetHostEnc.rb'
+    #require_relative './sat526MigrationGetHostActivationKeys.rb'
     #require_relative './sat5MigrationGetHostChannels.rb'
-    #require_relative './sat526MigrationGetHost_nics.rb'
+    #require_relative './sat526MigrationGetHostNics.rb'
     #require_relative '/sat526MigrationDataProcessing.rb'
     #require_relative './sat526MigrationGenerateHostFile.rb'
     #require_relative './sat526MigrationCreateContenthostEntry.rb'

@@ -119,11 +119,13 @@ class GetHostList
     #puts "@hosts_search  " ; p @hosts_search.inspect
     #puts "@hosts_results " ; p @hosts_results.inspect
     #puts "@hosts_found " ; p @hosts_found.inspect
-    puts "-------------------------------------"
-    puts
-    @hosts_fqdn.each {|element| puts element}
-    puts
-    puts "-------------------------------------"
+    
+    #puts "-------------------------------------"
+    #puts
+    #@hosts_fqdn.each {|element| puts element}
+    #puts
+    #puts "-------------------------------------"
+    
     if @hosts_results.any?
       if @hosts_search.length != @hosts_results.length
         puts "There are hosts in your list that cannot be found with their FQDN names in global hosts file!"
@@ -145,6 +147,7 @@ class GetHostList
   def initiate_steps
     # Assign global array the value of the instance variable
     $hosts_fqdn = @hosts_fqdn
+    $hosts = @hosts_search
     require_relative './sat526MigrationGetHost_Enc.rb'
     #require_relative './sat526MigrationGetHost_ActivationKeys.rb'
     #require_relative './sat526MigrationGetHost_Channels.rb'

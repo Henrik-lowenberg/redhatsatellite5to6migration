@@ -8,8 +8,7 @@
 # # This file: sat526MigrationGetHost_Enc.rb
 
 =begin
-Format of binary file data:
-
+Format of json data:
 1dyfqn2:
   parameters:
     base: ubuntu01
@@ -19,15 +18,20 @@ Format of binary file data:
     supportlevel: basic
     sz: vcn
     uuma: got
-
 =end
 require 'yaml'
 
 puts " #{__FILE__} running..."
-puts "Halleluja Lord! I can see the light!" if $hosts_fqdn.any?
-puts
 
-encdump = []
 #dumpfile =YAML.load_file('/data01/puppet/enc/combined.yaml'
 dumpfile =YAML.load_file('combined.yaml')
-p dumpfile.inspect
+
+#p dumpfile.class
+#p dumpfile.inspect
+#puts dumpfile.keys
+$host_enc = Hash.new
+$hosts.each do |host|
+  $host_enc[host] = dumpfile[host]['parameters']
+end
+#p $host_enc.inspect
+#puts "#{$host_enc['srv01227']}"

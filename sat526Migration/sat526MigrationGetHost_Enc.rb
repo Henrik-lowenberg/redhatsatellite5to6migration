@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
-# Created 2019-03-15
+# Created 2019-03-30
 # # By: Henrik Lowenberg
 # # Property of HCL Inc.
 # # Description:
-# # Gather ENC variables for hosts
+# # Get hosts' ENC variables
 #
 # # This file: sat526MigrationGetHost_Enc.rb
 

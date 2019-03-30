@@ -35,18 +35,7 @@
 # Step 10: (manual step) Go into system group, click on each host and delete them from Satellite 5.
 #          Note! Only after manual verification of successful migration
 #          Delete system group in Satellite 5
-
-# Require:
 #
-#require("./sat526MigrationGetHost_Enc.rb")
-#require("./sat526MigrationGetHost_ActivationKeys.rb")
-#require("./sat526MigrationGetHost_Channels.rb")
-#require("./sat526MigrationGetHost_nics.rb")
-#require("./sat526MigrationGenerateHostFile.rb")
-#require("./sat526MigrationCreateContenthostEntry.rb")
-#require("./sat526MigrationCreateSatellite5SystemGroup.rb")
-#require("./sat526MigrationRunremotejobAgainstSatellite5SystemGroup.rb")
-
 # Class Definitions:
 #   GetHostList Class:
 #     checks if hostlist file is supplied as an argument or exits script
@@ -145,13 +134,14 @@ class GetHostList
   end #End def print_results
  
   def initiate_steps
-    # Assign global array the value of the instance variable
+    # Declare & assign values to global variables
     $hosts_fqdn = @hosts_fqdn
     $hosts = @hosts_search
     require_relative './sat526MigrationGetHost_Enc.rb'
     #require_relative './sat526MigrationGetHost_ActivationKeys.rb'
     #require_relative './sat526MigrationGetHost_Channels.rb'
     #require_relative './sat526MigrationGetHost_nics.rb'
+    #require_relative '/sat526MigrationDataProcessing.rb'
     #require_relative './sat526MigrationGenerateHostFile.rb'
     #require_relative './sat526MigrationCreateContenthostEntry.rb'
     #require_relative './sat526MigrationCreateSatellite5SystemGroup.rb'

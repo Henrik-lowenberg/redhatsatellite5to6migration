@@ -139,7 +139,7 @@ class GetHostList
     $hosts = @hosts_search
     require_relative './sat526MigrationGetHost_Enc.rb'
     #require_relative './sat526MigrationGetHost_ActivationKeys.rb'
-    #require_relative './sat526MigrationGetHost_Channels.rb'
+    #require_relative './sat5MigrationGetHostChannels.rb'
     #require_relative './sat526MigrationGetHost_nics.rb'
     #require_relative '/sat526MigrationDataProcessing.rb'
     #require_relative './sat526MigrationGenerateHostFile.rb'

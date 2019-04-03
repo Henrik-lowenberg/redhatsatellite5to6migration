@@ -30,7 +30,7 @@ elif [ $SLA = "BASIC" ]; then
 elif [ $SLA = "STANDARD" ]; then
   ENV="KT_HCL_shared_lce_puppet_dev_cv_puppet_dev_8"
 fi
-HOSTENV="KT_HCL_shared_lce_puppet_" + "$ENV"
+HOSTENV="KT_HCL_shared_lce_puppet_$ENV"
 PUPPETCONF="
 
 [main]
@@ -71,6 +71,7 @@ if grep -q "^enabled = 0" $RHSMFILE2; then  sed -i 's/enabled=0/enabled=1/g' $RH
 chkconfig rhsmcertd off
 service rhsmcertd stop
 yum clean all
+rm -rf /var/cache/yum
 mv /etc/sysconfig/rhn/systemid /etc/sysconfig/rhn/rhnclassic.systemid
 
 # Reregister host to Satellite 6 capsule
@@ -79,12 +80,12 @@ subscription-manager clean
 wget --no-check-certificate https://$CAPSULE/pub/katello-ca-consumer-latest.noarch.rpm
 rpm -ivh katello-ca-consumer-latest.noarch.rpm
 
-subscription-manager register --name=$HOSTFQDN --org="HCL_shared" --activationkey=ak-auto,ak-lcs_6months_rhel$OSMAJ --force
+subscription-manager register --name=$HOSTFQDN --org="HCL_shared" --activationkey=ak-auto,ak-lcs_6month_rhel$OSMAJ --force
 # Enable additional repos
 if [[ $OSMAJ = 6 ]]; then
   subscription-manager repos --enable rhel-6-server-rpms --enable rhel-6-server-supplementary* --enable rhel-6-server-rh-common* --enable rhel-6-server-optional* rhel-6-server-satellite-tools-6.2-rpms
 elif [[ $OSMAJ = 7 ]]; then
-  subscription-manager repos --enable rhel-7-server-rpms --enable rhel-7-server-supplementary* --enable rhel-7-server-rh-common* --enable rhel-7-server-optional*  --enable rhel-7-server-extras* rhel-7-server-satellite-tools-6.2-rpms
+  subscription-manager repos --enable rhel-7-server-rpms --enable rhel-7-server-supplementary* --enable rhel-7-server-rh-common* --enable rhel-7-server-optional*  --enable rhel-7-server-extras* --enable rhel-7-server-satellite-tools-6.2-rpms
 fi
 # Verify subscription status
 SUBSCRIPTION_STATUS=$(subscription-manager list|awk '/^Status:/{ print $2}')
@@ -101,6 +102,7 @@ $PUPPETCONF
 EOF
 
 [[ -d /var/lib/puppet/ssl/ ]] && rm -rf /var/lib/puppet/ssl/ > /dev/null 2>&1
-puppet agent -t --waitforcert 30
+puppet agent -t --onetime --tags no_such_tag --waitforcert 30 --no-daemonize
 
-#
+# Get server out of build mode
+# /usr/bin/wget --quiet --output-document=/dev/null --no-check-certificate <%= foreman_url %>

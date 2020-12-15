@@ -4,7 +4,7 @@ require 'yaml'
 require 'json'
 
 begin
-  @SATELLITE_URL = "http://rhnsat.srv.volvo.com/rpc/api"
+  @SATELLITE_URL = "http://sat5.example.com/rpc/api"
   @SATELLITE_LOGIN = "spacecmd"
   @SATELLITE_PASSWORD = "spacecmd"
   @HOSTNAMES = ARGV[0]

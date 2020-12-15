@@ -4,9 +4,9 @@ require 'yaml'
 require 'json'
 
 begin
-  @SATELLITE_URL = "http://rhnsat.srv.volvo.com/rpc/api"
+  @SATELLITE_URL = "http://sat5.example.com/rpc/api"
   @SATELLITE_LOGIN = "spacecmd"
-  @SATELLITE_PASSWORD = "spacecmd"
+  @SATELLITE_PASSWORD = "changeme"
   @HOSTNAMES = ARGV[0]
 
   # Enable support to run script in standalone mode with file input

@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
-# Created 2019-03-15
 # # By: Henrik Lowenberg
-# # Property of HCL Inc.
 # # Description: Migrate hosts from Satellite 5 to Satellite 6 in a series of steps
 
 class HostFinder

@@ -3,7 +3,7 @@
 #           RHN Classic to RHSM
 #             Install package: subscription-manager subscription-manager-migration subscription-manager-migration-data
 #             Run script rhn-migrate-classic-to-rhsm
-#              *maybe with rhn-migrate-classic-to-rhsm --serverurl=rhnsat.srv.volvo.com (login required)
+#              *maybe with rhn-migrate-classic-to-rhsm --serverurl=sat5.example.com (login required)
 #             Verify with oo-admin-yum-validator
 #           create new puppet.conf,
 #           subscription-manager unregister
@@ -18,19 +18,19 @@ RHNFILE1="/etc/yum/pluginconf.d/rhnplugin.conf"
 RHNFILE2="/etc/yum/pluginconf.d/refresh-packagekit.conf"
 RHSMFILE1="/etc/yum/pluginconf.d/product-id.conf"
 RHSMFILE2="/etc/yum/pluginconf.d/subscription-manager.conf"
-CAPSULE="segotl3523.srv.volvo.com"
+CAPSULE="sat6capsule.example.com"
 SLA=$(grep SUPPORTLEVEL /var/log/puppet_configgroups.txt|cut -f2 -d"=")
 declare -i OSMAJ
 OSMAJ=$(cut -f7 -d" " /etc/redhat-release|cut -f1 -d".")
 HOSTFQDN=$(hostname -f)
 if [ $SLA = "PREMIUM" ]; then
-  ENV="KT_HCL_shared_lce_puppet_prod_cv_puppet_prod_10"
+  ENV="KT_lce_puppet_prod_cv_puppet_prod_10"
 elif [ $SLA = "BASIC" ]; then
-   ENV="KT_HCL_shared_lce_puppet_qa_cv_puppet_qa_9"
+   ENV="KT_lce_puppet_qa_cv_puppet_qa_9"
 elif [ $SLA = "STANDARD" ]; then
-  ENV="KT_HCL_shared_lce_puppet_dev_cv_puppet_dev_8"
+  ENV="KT_shared_lce_puppet_dev_cv_puppet_dev_8"
 fi
-HOSTENV="KT_HCL_shared_lce_puppet_$ENV"
+HOSTENV="KT_shared_lce_puppet_$ENV"
 PUPPETCONF="
 
 [main]
@@ -44,7 +44,7 @@ pluginsync      = true
 report          = true
 ignoreschedules = true
 daemon          = false
-ca_server       = segotl2596.srv.volvo.com
+ca_server       = sat6.example.com
 certname        = $HOSTFQDN
 environment     = $HOSTENV
 server          = $CAPSULE
@@ -80,7 +80,7 @@ subscription-manager clean
 wget --no-check-certificate https://$CAPSULE/pub/katello-ca-consumer-latest.noarch.rpm
 rpm -ivh katello-ca-consumer-latest.noarch.rpm
 
-subscription-manager register --name=$HOSTFQDN --org="HCL_shared" --activationkey=ak-auto,ak-lcs_6month_rhel$OSMAJ --force
+subscription-manager register --name=$HOSTFQDN --org="ORG" --activationkey=ak-auto,ak-lcs_6month_rhel$OSMAJ --force
 # Enable additional repos
 if [[ $OSMAJ = 6 ]]; then
   subscription-manager repos --enable rhel-6-server-rpms --enable rhel-6-server-supplementary* --enable rhel-6-server-rh-common* --enable rhel-6-server-optional* rhel-6-server-satellite-tools-6.2-rpms

@@ -1,17 +1,20 @@
 #!/usr/bin/env ruby
+#
+# Note! This has been adapted for cloudform use and needs to be
+# rewritten
 
 require 'uri'
 require 'rest-client'
 require 'json'
 require 'timeout'
 
-VOLVO_SATELLITE_HOST_ID = 'volvo_satellite_host_id'
+SATELLITE_HOST_ID = 'satellite_host_id'
 organization_id = '1'
 location_id = '3'
 method = 'create_satellite_host'
-satellite_host = 'segotl0911.srv.volvo.com'
-satellite_username = 'admin'
-satellite_password = 'go2MARS'
+satellite_host = 'sat6.example.com'
+satellite_username = 'sat6user'
+satellite_password = 'changeme'
 
 
 #match on all reserved URI characters and escape them
@@ -96,7 +99,7 @@ def save_satellite_host_id(prov, satellite_host_id)
   vm = prov.destination
   if vm && satellite_host_id
     $evm.log(:info, "Saving Satellite Host ID to VMDB: [#{vm.name}][#{satellite_host_id}]")
-    vm.custom_set(VOLVO_SATELLITE_HOST_ID, satellite_host_id)
+    vm.custom_set(SATELLITE_HOST_ID, satellite_host_id)
   end
   prov.set_option(:satellite_host_id, satellite_host_id)
 end
@@ -118,7 +121,6 @@ begin
       log("Request info service_template_provision_task: #{request.inspect}")
       dialog_options = prov.options[:dialog] 
       ipaddr = dialog_options["dialog_ip_address"]
-      #ipaddr = "10.221.213.4"
     end
   
   

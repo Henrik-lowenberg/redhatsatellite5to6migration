@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
-# Created 2019-03-15
 # # By: Henrik Lowenberg
-# # Property of HCL Inc.
 # # Description:
 # # Migrate hosts from Satellite 5 to Satellite 6
 # # in a series of steps
@@ -23,7 +21,7 @@
 #           RHN Classic to RHSM
 #             Install package: subscription-manager subscription-manager-migration subscription-manager-migration-data
 #             Run script rhn-migrate-classic-to-rhsm
-#              *maybe with rhn-migrate-classic-to-rhsm --serverurl=rhnsat.srv.volvo.com (login required)
+#              *maybe with rhn-migrate-classic-to-rhsm --serverurl=sat5.example.com (login required)
 #             Verify with oo-admin-yum-validator 
 #           create new puppet.conf,
 #           subscription-manager unregister

@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
-# Created 2019-03-15
 # # By: Henrik Lowenberg
-# # Property of HCL Inc.
 # # Description: 
 # # Main script functions:
 # # Migrate hosts from Satellite 5 to Satellite 6
